@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 namespace PlayerControllerEvent{
     public class PlayerController : MonoBehaviour
     {
@@ -33,7 +32,7 @@ namespace PlayerControllerEvent{
             //     return; 
             // }
             
-            if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKey(KeyCode.E)){
                 interactable?.Interact(this);
             }
 

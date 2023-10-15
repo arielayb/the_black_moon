@@ -1,9 +1,49 @@
 fileFormatVersion: 2
 guid: dee88d68f29344747b2068ed8fd89739
 ModelImporter:
-  serializedVersion: 22103
+  serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ch27_body
+    second: {fileID: 2100000, guid: ec1b785ee2bdb1e4580b4f61a7a6e4ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ch27_hair
+    second: {fileID: 2100000, guid: 5ab3ce11fecae7b4c993bbe3a7b30595, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch27_1001_Diffuse
+    second: {fileID: 2800000, guid: e94b08644e61a1b48826d06f64f3564c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch27_1001_Glossiness
+    second: {fileID: 2800000, guid: e1156a0943460da47b28ca7fc480a244, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch27_1001_Normal
+    second: {fileID: 2800000, guid: 632ed2e66d301d441b5f8ad759da7204, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch27_1001_Specular
+    second: {fileID: 2800000, guid: 14fe060253cb14f48b0a2d49546f437c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch27_1002_Diffuse
+    second: {fileID: 2800000, guid: d57ecfa45ba9a0740928c85dc41f96ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ch27_1002_Normal
+    second: {fileID: 2800000, guid: 90e051a7898cdfd4a9a8739f533a0f0c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -69,6 +109,7 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
