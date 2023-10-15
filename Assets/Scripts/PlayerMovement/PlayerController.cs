@@ -16,7 +16,11 @@ namespace PlayerControllerEvent{
         public Interactable interactable {get; set;}
         public DialogueUI DialogueUI => dialogueUI;
 
-    
+        private void Awake()
+        {
+            // pauseSystem = FindObjectOfType<PauseSystem>();
+        }
+
         private void Start()
         {
             characterController = GetComponent<CharacterController>();
@@ -24,9 +28,19 @@ namespace PlayerControllerEvent{
         }
     
         void Update(){
-
+            // if (pauseSystem.GetIsPaused()) 
+            // { 
+            //     return; 
+            // }
+            
             if(Input.GetKeyDown(KeyCode.E)){
                 interactable?.Interact(this);
+            }
+
+            if(Input.GetKey(KeyCode.LeftShift)){
+                MovementSpeed = 4;
+            }else{
+                MovementSpeed = 1;
             }
         }
 
@@ -44,7 +58,8 @@ namespace PlayerControllerEvent{
             float horizontal = Input.GetAxis("Horizontal") * MovementSpeed;
             float vertical = Input.GetAxis("Vertical") * MovementSpeed;
             characterController.Move((cam.transform.right * horizontal + cam.transform.forward * vertical) * Time.deltaTime);
-        
+            characterController.transform.eulerAngles = new Vector3(0.0f, cam.transform.eulerAngles.y, 0.0f);
+
             // Gravity
             if(characterController.isGrounded)
             {

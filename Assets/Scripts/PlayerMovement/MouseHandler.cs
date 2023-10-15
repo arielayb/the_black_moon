@@ -7,10 +7,10 @@ public class MouseHandler : MonoBehaviour
     // horizontal rotation speed
     [SerializeField] private float horizontalSpeed = 1f;
     // vertical rotation speed
-     [SerializeField] private float verticalSpeed = 1f;
-     [SerializeField] private float xRotation = 0.0f;
-     [SerializeField] private float yRotation = 0.0f;
-     [SerializeField] private Camera cam;
+    [SerializeField] private float verticalSpeed = 1f;
+    [SerializeField] private float xRotation = 0.0f;
+    [SerializeField] private float yRotation = 0.0f;
+    [SerializeField] private Camera cam;
 
     // Start is called before the first frame update
     void Start()
