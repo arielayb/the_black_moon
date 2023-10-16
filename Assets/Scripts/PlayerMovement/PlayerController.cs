@@ -17,7 +17,6 @@ namespace PlayerControllerEvent{
 
         private void Awake()
         {
-            // pauseSystem = FindObjectOfType<PauseSystem>();
         }
 
         private void Start()
@@ -27,11 +26,7 @@ namespace PlayerControllerEvent{
         }
     
         void Update(){
-            // if (pauseSystem.GetIsPaused()) 
-            // { 
-            //     return; 
-            // }
-            
+
             if(Input.GetKey(KeyCode.E)){
                 interactable?.Interact(this);
             }

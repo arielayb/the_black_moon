@@ -16,4 +16,4 @@ MonoBehaviour:
   - I'm done!
   responses:
   - responseText: Whatever...
-    dialogueObject: {fileID: 0}
+    dialogueObject: {fileID: 11400000}
