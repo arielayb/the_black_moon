@@ -5,6 +5,9 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     GameObject[] pauseObjects;
+	
+    public DynamicInventoryDisplay chestPanel;
+    public DynamicInventoryDisplay playerInventoryPanel;
 
 	// Use this for initialization
 	void Start () {
@@ -16,17 +19,19 @@ public class PauseMenu : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 
-		//uses the p button to pause and unpause the game
-		if(Input.GetKeyDown(KeyCode.Escape))
-		{
-			if(Time.timeScale == 1)
+		if(!playerInventoryPanel.gameObject.activeSelf){
+			//uses the p button to pause and unpause the game
+			if(Input.GetKeyDown(KeyCode.Escape))
 			{
-				Time.timeScale = 0;
-				showPaused();
-			} else if (Time.timeScale == 0){
-				Debug.Log ("high");
-				Time.timeScale = 1;
-				hidePaused();
+				if(Time.timeScale == 1)
+				{
+					Time.timeScale = 0;
+					showPaused();
+				} else if (Time.timeScale == 0){
+					Debug.Log ("high");
+					Time.timeScale = 1;
+					hidePaused();
+				}
 			}
 		}
 	}

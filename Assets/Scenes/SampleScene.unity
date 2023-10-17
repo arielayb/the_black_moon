@@ -8145,6 +8145,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2912008149518618552, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
+      propertyPath: chestPanel
+      value: 
+      objectReference: {fileID: 1327889175}
+    - target: {fileID: 2912008149518618552, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
+      propertyPath: playerInventoryPanel
+      value: 
+      objectReference: {fileID: 480013160}
     - target: {fileID: 3026636603842261914, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 38.48
@@ -8185,14 +8193,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3281572209624591313, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 3281572209624591322}
-    - target: {fileID: 3281572209624591313, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
-      propertyPath: InteractionLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 3281572210280174709, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
       propertyPath: dialogueUI
       value: 
@@ -8211,17 +8211,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e08bf5bceeb01784fa0e85689719aeb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3281572209624591322 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3281572210280174709, guid: 7c1c709ef56442f4c91cc81c0818260f, type: 3}
-  m_PrefabInstance: {fileID: 3281572209624591304}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d39b7d16050f2d478628826a4d6d943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
