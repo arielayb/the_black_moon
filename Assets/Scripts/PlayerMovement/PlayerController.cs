@@ -7,7 +7,8 @@ namespace PlayerControllerEvent{
     {
         CharacterController characterController;
         [SerializeField] private DialogueUI dialogueUI;
-        [SerializeField] private float MovementSpeed = 1;
+        [SerializeField] private float MovementSpeed = 6;
+        [SerializeField] private float MovementRunSpeed = 10;
         [SerializeField] private float Gravity = 9.8f;
         [SerializeField] private float velocity = 0;
         [SerializeField] private Camera cam;
@@ -32,9 +33,10 @@ namespace PlayerControllerEvent{
             }
 
             if(Input.GetKey(KeyCode.LeftShift)){
-                MovementSpeed = 4;
-            }else{
-                MovementSpeed = 1;
+                MovementSpeed = MovementRunSpeed;
+            }
+            else{
+                MovementSpeed = 3;
             }
         }
 
