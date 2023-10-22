@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 63117791178c75d44b428beb2d6a7876
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - directionalLight: {instanceID: 0}
+  - dayAndNightSetting: {fileID: 11400000, guid: bd9ae714cda382a498e825548d992ca0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
