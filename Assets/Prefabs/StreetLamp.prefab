@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1366166883710820
+--- !u!1 &785655409419877107
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4616545814222120}
-  - component: {fileID: 33737880327912440}
-  - component: {fileID: 23146183920771222}
-  - component: {fileID: 7455562072337878121}
+  - component: {fileID: 4028728188441582032}
+  - component: {fileID: 817077802012583445}
+  - component: {fileID: 9123987576100739846}
+  - component: {fileID: 3844829839189998958}
   m_Layer: 0
-  m_Name: SB_Lamp_01
+  m_Name: StreetLamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4616545814222120
+--- !u!4 &4028728188441582032
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366166883710820}
+  m_GameObject: {fileID: 785655409419877107}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -25.72, y: -0.08953428, z: 16.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7770016454973722011}
+  - {fileID: 2650670183651396870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &33737880327912440
+--- !u!33 &817077802012583445
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366166883710820}
+  m_GameObject: {fileID: 785655409419877107}
   m_Mesh: {fileID: 4300000, guid: 0ad3e586d853a44fcb1243fb1ea6e11b, type: 3}
---- !u!23 &23146183920771222
+--- !u!23 &9123987576100739846
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366166883710820}
+  m_GameObject: {fileID: 785655409419877107}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,13 +85,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7455562072337878121
+--- !u!64 &3844829839189998958
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366166883710820}
+  m_GameObject: {fileID: 785655409419877107}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -107,7 +107,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0ad3e586d853a44fcb1243fb1ea6e11b, type: 3}
---- !u!1 &8947147074482134743
+--- !u!1 &4321271392866244349
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,10 +115,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7770016454973722011}
-  - component: {fileID: 4653162023709469846}
-  - component: {fileID: 5707849285784390663}
-  - component: {fileID: 2927859611740891864}
+  - component: {fileID: 2650670183651396870}
+  - component: {fileID: 228421361012606178}
+  - component: {fileID: 7958489616862410257}
+  - component: {fileID: 6801378300639229245}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: StreetLight
@@ -126,35 +126,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7770016454973722011
+--- !u!4 &2650670183651396870
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8947147074482134743}
+  m_GameObject: {fileID: 4321271392866244349}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.362, y: 4.908, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4616545814222120}
+  m_Father: {fileID: 4028728188441582032}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!108 &4653162023709469846
+--- !u!108 &228421361012606178
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8947147074482134743}
+  m_GameObject: {fileID: 4321271392866244349}
   m_Enabled: 1
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 300
-  m_Range: 5.74
+  m_Range: 5.940586
   m_SpotAngle: 72.79213
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -203,13 +203,13 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &5707849285784390663
+--- !u!114 &7958489616862410257
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8947147074482134743}
+  m_GameObject: {fileID: 4321271392866244349}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
@@ -226,20 +226,20 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!114 &2927859611740891864
+--- !u!114 &6801378300639229245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8947147074482134743}
+  m_GameObject: {fileID: 4321271392866244349}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc4d76f733087744991913c9d19d5274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_LensFlareData: {fileID: 11400000, guid: e79854fc6a1cf984a9e6d5fd840e5d6f, type: 2}
-  intensity: 1
+  intensity: 500
   maxAttenuationDistance: 100
   maxAttenuationScale: 100
   distanceAttenuationCurve:
@@ -320,7 +320,7 @@ MonoBehaviour:
   useBackgroundCloudOcclusion: 0
   sampleCount: 32
   occlusionOffset: 0.05
-  scale: 4.15
+  scale: 6.91
   allowOffScreen: 0
   volumetricCloudOcclusion: 0
   occlusionRemapCurve:
