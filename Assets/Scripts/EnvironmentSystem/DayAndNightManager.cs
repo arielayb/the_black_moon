@@ -11,7 +11,6 @@ namespace DayAndNightManagerSys{
     {
         [SerializeField] private  Light directionalLight;
         [SerializeField] private DayAndNightCycle dayAndNightSetting;
-        // [SerializeField] private StreetLampCycle streetLampCycle;
         [SerializeField, Range(0, 2400)] private float timeOfDay;
         private GameObject[] streetLight;
 
