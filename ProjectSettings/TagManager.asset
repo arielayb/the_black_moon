@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ShowOnPause
   - StreetLight
+  - StreetLamp
   layers:
   - Default
   - TransparentFX

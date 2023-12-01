@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEditor;
 
 namespace DayAndNightManagerSys{
     [ExecuteAlways]
@@ -10,12 +11,12 @@ namespace DayAndNightManagerSys{
     {
         [SerializeField] private  Light directionalLight;
         [SerializeField] private DayAndNightCycle dayAndNightSetting;
-        [SerializeField] private StreetLampCycle streetLampCycle;
+        // [SerializeField] private StreetLampCycle streetLampCycle;
         [SerializeField, Range(0, 2400)] private float timeOfDay;
-        private GameObject streetLight;
+        private GameObject[] streetLight;
 
         private void Start() {
-            streetLight = streetLampCycle.streetLamp.transform.Find("Spot Light").gameObject;     
+            streetLight = GameObject.FindGameObjectsWithTag("StreetLight");     
         }
 
         private void Update(){
@@ -45,13 +46,14 @@ namespace DayAndNightManagerSys{
         }
 
         private void UpdateObjectLighting(float timeOfDayNow){
-            print("time of day: " + timeOfDay);
-            if(0f <= timeOfDayNow && timeOfDayNow <= 500f){
-                streetLight.SetActive(true);
-            }else if(1800f <= timeOfDayNow && timeOfDayNow <= 2400f){
-                streetLight.SetActive(true);
-            }else if(timeOfDayNow >= 500f){
-                streetLight.SetActive(false);
+            foreach(GameObject streetlamp in streetLight){
+                if(timeOfDayNow >= 0f && timeOfDayNow <= 600f){
+                    streetlamp.SetActive(true);
+                }else if(timeOfDayNow >= 1800f && timeOfDayNow <= 2400f){
+                    streetlamp.SetActive(true);
+                }else if(timeOfDayNow >= 600f){
+                    streetlamp.SetActive(false);
+                }
             }
         }
 
