@@ -47,11 +47,17 @@ namespace DayAndNightManagerSys{
         private void UpdateObjectLighting(float timeOfDayNow){
             foreach(GameObject streetlamp in streetLight){
                 if(timeOfDayNow >= 0f && timeOfDayNow <= 600f){
-                    streetlamp.SetActive(true);
+                    if(!streetlamp.activeSelf){
+                        streetlamp.SetActive(true);
+                    }
                 }else if(timeOfDayNow >= 1800f && timeOfDayNow <= 2400f){
-                    streetlamp.SetActive(true);
-                }else if(timeOfDayNow >= 600f){
-                    streetlamp.SetActive(false);
+                    if(!streetlamp.activeSelf){
+                        streetlamp.SetActive(true);
+                    }
+                }else if(timeOfDayNow >= 600f && timeOfDay <= 1800f){
+                    if(streetlamp.activeSelf){
+                        streetlamp.SetActive(false);
+                    }
                 }
             }
         }
